@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.AdminViewController">
+    <top>
+        <AnchorPane prefHeight="95.0" prefWidth="600.0" style="-fx-background-color: #00796B;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" layoutX="178.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD A PARTY">
+                    <font>
+                        <Font name="Segoe UI Black" size="38.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2DFDB;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="addPartyButton" layoutX="244.0" layoutY="232.0" mnemonicParsing="false" onAction="#addPartyButtonPressed" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #FF5722;" text="ADD PARTY" />
+            <TextField fx:id="partyNameTextField" layoutX="181.0" layoutY="43.0" prefHeight="26.0" prefWidth="243.0" promptText="e.g PPP" />
+            <TextField fx:id="candidateNameTextField" layoutX="182.0" layoutY="109.0" prefHeight="26.0" prefWidth="243.0" promptText="e.g Imran Khan" />
+            <Text layoutX="182.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Party Name" wrappingWidth="144.3070068359375">
+               <font>
+                  <Font name="Segoe UI Black" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="182.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Candidate Name" wrappingWidth="188.3070068359375">
+               <font>
+                  <Font name="Segoe UI Black" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="182.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password" wrappingWidth="188.3070068359375">
+               <font>
+                  <Font name="Segoe UI Black" size="15.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="adminPasswordField" layoutX="182.0" layoutY="173.0" prefHeight="26.0" prefWidth="243.0" promptText="Admin Password" />
+            <Text fx:id="adminPagePrompt" fill="#ff5722" layoutX="191.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="217.3367919921875">
+               <font>
+                  <Font name="Segoe UI Historic" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="adminBackButton" layoutX="74.0" layoutY="232.0" mnemonicParsing="false" onAction="#adminBackButtonPressed" opacity="0.0" prefHeight="44.0" prefWidth="49.0" style="-fx-background-color: #FF5722;" />
+            <ImageView disable="true" fitHeight="44.0" fitWidth="46.0" layoutX="74.0" layoutY="232.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.FinalViewController">
+    <top>
+        <AnchorPane prefHeight="95.0" prefWidth="600.0" style="-fx-background-color: #00796B;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" layoutX="65.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONGRATULATIONS !">
+                    <font>
+                        <Font name="Segoe UI Black" size="38.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2DFDB;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="#ff5722" layoutX="34.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Vote Has Been Casted" textAlignment="CENTER" wrappingWidth="530.400084733963">
+                    <font>
+                        <Font name="Segoe UI Black" size="18.0" />
+                    </font>
+                </Text>
+                <Button fx:id="finalLoginButton" layoutX="169.0" layoutY="220.0" mnemonicParsing="false" onAction="#finalLoginButtonPressed" opacity="0.73" prefHeight="42.0" prefWidth="262.0" style="-fx-background-color: #FF5722;" text="LOGIN PAGE" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Black" size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="185.0" fitWidth="261.0" layoutX="170.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@1af8d3b487b77085d5288814f151e1de.gif" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
